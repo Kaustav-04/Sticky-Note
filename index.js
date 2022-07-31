@@ -124,6 +124,7 @@ function updateTodo(index){
     obj[index].TodoDate = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + '  ' + (today.getHours()) + ':' + (today.getMinutes()) + ':' + (today.getSeconds());
     localStorage.setItem("Todo",JSON.stringify(obj));
     addTodoSection.style.display = "none";
+    writeSec.value = "";
     showTodo();
 
 }
